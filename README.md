@@ -1,6 +1,6 @@
-# bible-verses-server
+# verses-server
 
-a simple bible verse server that sends a reference and content text.
+a simple verse server for belivers.
 
 ## route
 

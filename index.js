@@ -5,7 +5,7 @@ const app = express();
 const json = JSON.parse(fs.readFileSync('bible_verses.json'));
 
 // Endpoint to get a random verse
-app.get('/api/v1/random', (req, res) => {
+app.get('/api/v1/christian/random', (req, res) => {
     const verses = json.books.flatMap((book) =>
         book.chapters.flatMap((chapter) => chapter.verses)
     );
@@ -15,6 +15,13 @@ app.get('/api/v1/random', (req, res) => {
     const { reference, text } = randomVerse;
 
     res.json({ reference, text });
+});
+
+app.get('/', (req, res) => {
+    res.json({
+        "succes": true,
+        "message": "Server is successfully running. make a request to /api/v1/christian/random"
+    })
 });
 
 // Start the server
