@@ -1,0 +1,15 @@
+{
+  "name": "bible-verses-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": "https://github.com/YohannesTz/bible-verses-server.git",
+  "author": "yohannesTz <yohannes222ethiopia@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
